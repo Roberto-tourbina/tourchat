@@ -1,0 +1,33 @@
+[debug] [2022-05-08T15:27:50.259Z] ----------------------------------------------------------------------
+[debug] [2022-05-08T15:27:50.261Z] Command:       /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js /Users/User/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve --only hosting
+[debug] [2022-05-08T15:27:50.261Z] CLI Version:   9.10.2
+[debug] [2022-05-08T15:27:50.261Z] Platform:      darwin
+[debug] [2022-05-08T15:27:50.261Z] Node Version:  v12.18.1
+[debug] [2022-05-08T15:27:50.262Z] Time:          Sun May 08 2022 16:27:50 GMT+0100 (GMT+01:00)
+[debug] [2022-05-08T15:27:50.262Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-08T15:27:50.267Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-08T15:27:50.267Z] > authorizing via signed-in user (roberto@tourbina.net)
+[debug] [2022-05-08T15:27:50.268Z] [iam] checking project tour-by-chat for permissions ["firebase.projects.get"]
+[debug] [2022-05-08T15:27:50.269Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-08T15:27:50.269Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-08T15:27:50.486Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 08 May 2022 15:27:50 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-08T15:27:50.534Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tour-by-chat:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-08T15:27:51.428Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 08 May 2022 15:27:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=650","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-08T15:27:51.429Z] > refreshing access token with scopes: []
+[debug] [2022-05-08T15:27:51.430Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-08T15:27:51.614Z] <<< HTTP RESPONSE 200 {"date":"Sun, 08 May 2022 15:27:51 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-08T15:27:51.661Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tour-by-chat [none]
+[debug] [2022-05-08T15:27:51.988Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tour-by-chat 200
+[debug] [2022-05-08T15:27:51.989Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tour-by-chat {"projectId":"tour-by-chat","projectNumber":"785400042267","displayName":"tour-by-chat","name":"projects/tour-by-chat","resources":{"hostingSite":"tour-by-chat","storageBucket":"tour-by-chat.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-05-08T15:27:51.991Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tour-by-chat/sites 
+[debug] [2022-05-08T15:27:53.241Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tour-by-chat/sites 200
+[debug] [2022-05-08T15:27:53.241Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tour-by-chat/sites {"sites":[{"name":"projects/tour-by-chat/sites/tour-by-chat","defaultUrl":"https://tour-by-chat.web.app","type":"DEFAULT_SITE"},{"name":"projects/tour-by-chat/sites/tourbichat","defaultUrl":"https://tourbichat.web.app","appId":"1:785400042267:web:fe0b9143b4bab0248c79be","type":"USER_SITE"}]}
+[debug] [2022-05-08T15:27:53.242Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tour-by-chat/webApps/-/config [none]
+[debug] [2022-05-08T15:27:53.991Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tour-by-chat/webApps/-/config 200
+[debug] [2022-05-08T15:27:53.992Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tour-by-chat/webApps/-/config {"projectId":"tour-by-chat","appId":"1:785400042267:web:fe0b9143b4bab0248c79be","storageBucket":"tour-by-chat.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBihntBgQVKK4wZ3_o74kPZIR9qHQEC00k","authDomain":"tour-by-chat.firebaseapp.com","messagingSenderId":"785400042267","measurementId":"G-C81XF4JQZ4"}
+[info] i  hosting: Serving hosting files from: ./public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./public\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}

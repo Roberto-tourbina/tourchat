@@ -7,7 +7,13 @@
  * 4. Copy the config object snippet, then add it here.
  */
 const config = {
-  /* TODO: ADD YOUR FIREBASE CONFIGURATION OBJECT HERE */
+  apiKey: "AIzaSyBihntBgQVKK4wZ3_o74kPZIR9qHQEC00k",
+  authDomain: "tour-by-chat.firebaseapp.com",
+  projectId: "tour-by-chat",
+  storageBucket: "tour-by-chat.appspot.com",
+  messagingSenderId: "785400042267",
+  appId: "1:785400042267:web:fe0b9143b4bab0248c79be",
+  measurementId: "G-C81XF4JQZ4"
 };
 
 export function getFirebaseConfig() {

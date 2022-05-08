@@ -1,5 +1,6 @@
 {
   "projects": {
-    "chat": "tour-by-chat"
+    "chat": "tour-by-chat",
+    "default": "tour-by-chat"
   }
 }
